@@ -1,0 +1,13 @@
+extends ../layouts/common.pug
+block content
+    .d-flex.mb-5
+        h1.mr-4 Chuyển nhanh 24/7 
+        img(src="/images/money.png", alt="", width=60, height=60)
+    form(method="POST")
+        .form-group
+            label(for="account") Chuyển tới
+            input#account.form-control.mr-sm-2.mb-2(name="accountId", type="text")
+        .form-group
+            label(for="amount") Số tiền
+            input#amount.form-control.mr-sm-2.mb-2(name="amount", type="number")
+        button.btn.btn-primary Giao dịch

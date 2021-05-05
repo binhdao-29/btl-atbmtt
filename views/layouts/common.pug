@@ -1,0 +1,31 @@
+html
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='/')
+            img(src="/images/bank.png", alt="", style="width: 6rem", class="ml-2")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href='/users')
+                        | Trang chủ 
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href="/users/create") Tài khoản
+                li.nav-item
+                    a.nav-link(href='/users/search') Tìm kiếm
+                li.nav-item
+                    a.nav-link(href='/transfer/create') Chuyển khoản
+
+                li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                        | Tiện ích
+                    .dropdown-menu(aria-labelledby='navbarDropdown')    
+                    
+        if user 
+            p= user.name
+    .container.pt-5                
+      block content

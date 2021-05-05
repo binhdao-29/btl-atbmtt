@@ -1,0 +1,22 @@
+extends ../layouts/common.pug
+block content 
+    .d-flex
+        h1.mr-3 Danh sách chuyển khoản 
+        img(src="/images/credit-card.png", width=50 height=50)
+
+    form.form-inline.my-2.my-lg-0(action="/users/search", method="GET")
+        input.form-control.mr-sm-2(placeholder='Search', aria-label='Search', type="text", name="q", value= name)
+        button.btn.btn-outline-success.my-2.my-sm-0 Tìm kiếm
+
+    .mt-5
+        table.table 
+                tr 
+                    th Tên 
+                    th STK
+                    th Chi tiết
+                each user in users
+                    tr
+                        td= user.name
+                        td= user.phone
+                        td 
+                            a.btn.btn-light(href="/users/" + user.id) Xem 

@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Stephen",
+      "id": "qrXfPM8ki",
+      "phone": "10293847651009",
+      "email": "test@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "name": "John",
+      "phone": "12345643123900",
+      "id": "BF4GaQ1Bd"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "zYlErJj6g"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "gztEf7VYI",
+      "amount": 10000000,
+      "accountId": "hacker",
+      "userId": "qrXfPM8ki"
+    }
+  ]
+}
